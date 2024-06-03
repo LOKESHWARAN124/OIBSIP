@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unit Converter"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/inputValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="20dp"
+        android:hint="Enter value to convert"
+        android:inputType="numberDecimal"
+        android:backgroundTint="@color/purple_200"
+        android:elevation="4dp"/>
+
+    <Spinner
+        android:id="@+id/unitFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputValue"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_200"
+        android:elevation="4dp"/>
+
+    <Spinner
+        android:id="@+id/unitTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unitFrom"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_200"
+        android:elevation="4dp"/>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unitTo"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="Convert"
+        android:textColor="@android:color/white"
+        android:elevation="4dp"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"/>
+</RelativeLayout>

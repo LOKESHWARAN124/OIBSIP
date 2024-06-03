@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number 1"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNum1"
+        android:layout_marginTop="8dp"
+        android:hint="Enter number 2"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNum2"
+        android:layout_marginTop="16dp"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/buttonSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAdd"
+        android:layout_marginTop="8dp"
+        android:text="Subtract" />
+
+    <Button
+        android:id="@+id/buttonMultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSubtract"
+        android:layout_marginTop="8dp"
+        android:text="Multiply" />
+
+    <Button
+        android:id="@+id/buttonDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonMultiply"
+        android:layout_marginTop="8dp"
+        android:text="Divide" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonDivide"
+        android:layout_marginTop="16dp"
+        android:text="Result: " />
+
+</RelativeLayout>
